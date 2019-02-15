@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class SearchBar extends Component {
-  state = { term: "" };
+  state = { term: "" }; // 2nd
 
   onSubmit = e => {
     e.preventDefault();
@@ -21,7 +21,7 @@ class SearchBar extends Component {
               type="text"
               placeholder="Search Images"
               value={this.state.term}
-              onChange={e => this.setState({ term: e.target.value })}
+              onChange={e => this.setState({ term: e.target.value })} // 1st
             />
           </div>
         </form>
